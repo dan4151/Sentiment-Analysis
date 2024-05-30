@@ -126,8 +126,8 @@ num_of_classes = 3
 num_layers = 2
 
 
-train_df = pd.read_csv('data/trainEmotions.csv')
-test_df = pd.read_csv('data/testEmotions.csv')
+train_df = pd.read_csv('trainEmotions.csv')
+test_df = pd.read_csv('testEmotions.csv')
 print("Loading data")
 embedding = DataEmbedding(vec_size)
 train_loader, y_train = embedding.get_sen_embedding_from_path(train_df, True, "train")
